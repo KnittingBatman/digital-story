@@ -15,6 +15,8 @@ class Body():
         self.nheartbeats = 0
         self.nsleeps = 0
             #metrics by which a life can be measured
+        self.state = []
+            #an empty vessel, yet to be filled
         self.alive = True
             #this is new.
             #I am new.
@@ -36,15 +38,27 @@ class Body():
         while self.alive = True
             self.inhale()
             self.exhale()
-        else
-            print 'I breathed ', self.nbreaths
             
     def inhale(self):
-        self.nbreaths = self.nbreaths + 1
+        self.nbreaths = self.nbreaths + 0.5
+        #one more moment of this life is mine
  
     def exhale(self):
-        
+        self.nbreaths = self.nbreaths + 0.5
+        #I continue in the face of it all
     
+    #debugs the respiratory system
     def cry(self):
-        print ''
+        print 'wracking sobs kickstart the body.'
+    
+    #clenching muscle pushes me on day after day
+    def heart(self, state):
+        if (state == ('exited', 'scared', 'aroused')):
+            self.bpm = 155
+        else if (state == ('relaxed', 'asleep', 'soothed')):
+            self.bpm = 85
+        else:
+            self.bpm = 100
+        
+        
     
