@@ -1,0 +1,16 @@
+#Body formatting in CSS
+
+body{
+  width: 1000 px; #I span across monitors, beds, lives - wide and encompassing
+  color: #66ff00; #With arcane magic, I turn myself the color of congealed blood
+  #I am upsetting
+  #collaborators change my code
+  color: #FFCC99; #I am non-threatening and safe
+  #when they do not look I edit out their changes
+  #I like my fleshen body
+}
+
+.hair-class{
+  length:
+  color: 
+}
