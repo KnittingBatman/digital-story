@@ -59,6 +59,13 @@ class Body():
             self.bpm = 85
         else:
             self.bpm = 100
+            
+    def digest(self, food):
+        if (food):
+           self.energy = self.energy + 10;
+        else:
+            self.energy = self.energy - 2;
+        #I strip them down into component parts, driving the engine of my life
         
         
     
