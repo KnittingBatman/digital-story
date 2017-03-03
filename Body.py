@@ -10,27 +10,18 @@ class Body():
         self.name = name
         self.gender = gender
             #seeds of an identity are planted
-        self.brain = []
-        self.ears = []
-        self.eyes = []
-        self.heart = []
-        self.intestines = []
-        self.kidneys = []
-        self.limbs = []
-        self.liver = []
-        self.lungs = []
-        self.nose = []
-        self.skin = []
-        self.spleen = []
-        self.stomach = []
-        self.tongue = []
+        self.nbreaths = 0
+        self.nblinks = 0
+        self.nheartbeats = 0
+        self.nsleeps = 0
+            #metrics by which a life can be measured
         self.alive = True
             #this is new.
             #I am new.
 
     def build(self):
         self.ncells = 2
-        while self.ncells < 15,000,000,000,000
+        while self.ncells < 15000000000000:
             self.ncells = self.ncells**2
        #grow exponentially; fill the expanse with my Body
        #trillions of programs sing in harmony
@@ -45,10 +36,14 @@ class Body():
         while self.alive = True
             self.inhale()
             self.exhale()
+        else
+            print 'I breathed ', self.nbreaths
             
     def inhale(self):
+        self.nbreaths = self.nbreaths + 1
  
     def exhale(self):
+        
     
     def cry(self):
         print ''
