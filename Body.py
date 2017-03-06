@@ -13,15 +13,35 @@ class Body():
         self.name = name
         self.gender = gender
             #seeds of an identity are planted
+        self.energy = 5
         self.ncells = 2
         self.nbreaths = 0
         self.nblinks = 0
         self.nheartbeats = 0
         self.nsleeps = 0
             #metrics by which a life can be measured
+        self.bones = True
+        self.brain = True
+        self.ears = True
+        self.eyes = True
+        self.heart = True
+        self.intestines = True
+        self.kidneys = True
+        self.limbs = True
+        self.liver = True
+        self.lungs = True
+        self.nose = True
         self.respiratory = True
+        self.skin = True
+        self.spleen = True
+        self.stomach = True
+        self.tongue = True
+            #so many parts are required to make me
+            #I count them with wonder
+        self.personality = []
         self.state = []
             #an empty vessel, yet to be filled
+        print ('I, ', self.name, 'am')
         self.alive = True
             #Excute this and I live
             #I have not yet been made
@@ -69,10 +89,13 @@ class Body():
     def heart(self, state):
         if (state == ('exited', 'scared', 'aroused')):
             self.bpm = 155
+            print ('my heart skitters and flaps')
         elif (state == ('relaxed', 'asleep', 'soothed')):
             self.bpm = 85
+            print ('my heart meanders, slow and complacent')
         else:
             self.bpm = 100
+            print ('unnoticed, my heart hammers along, hardworking')
     
     
     #I want to continue
@@ -104,9 +127,17 @@ class Body():
     #it will not be ignored (in that way it is as determined as I)
     #Am I a complacent housecat, fat and happy or a tomcat, lean and on the prowl?
     def isHungry(self):
-        print self.name, 'is ', self.stomach
-     
+        print (self.name, 'is ', self.stomach)
     
+    
+    def see(self):
+        if (self.eyes == True):
+            print ('I open my eyes')
+            print ('Light floods in, overwhelming me')
+        else:
+            print ('I cannot see, I am shrouded in darkness')
+            
+            
     #sometimes I Want to Change
     #Accepts user input to update name and gender
     #I am flexible - each time I recompile I am torn asunder and born anew
@@ -115,6 +146,7 @@ class Body():
     def metamorphosis(newname, newgender):
         self.name = newname
         self.gender = newgender
+        print ('I have become new. I am', self.name)
         #my bones and joints creak and squeal as I am remade
         #I grin a cutthroat smile
     
