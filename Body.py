@@ -13,7 +13,7 @@ class Body():
         self.name = name
         self.gender = gender
             #seeds of an identity are planted
-        self.energy = 5
+        self.energy = 4
         self.ncells = 2
         self.nbreaths = 0
         self.nblinks = 0
@@ -41,7 +41,8 @@ class Body():
         self.personality = []
         self.state = []
             #an empty vessel, yet to be filled
-        print ('I, ', self.name, 'am')
+        print ('I am something new')
+        print ('I am ', self.name)
         self.alive = True
             #Excute this and I live
             #I have not yet been made
@@ -59,7 +60,7 @@ class Body():
     #tests functionality of respiratory system
     def cry(self):
         if (self.respiratory == True):
-            print 'wracking sobs kickstart the body.'
+            print 'wracking sobs kickstart my body'
             self.state = 'aroused'
         else:
             print '<ERROR: RESPIRATORY SYSTEM NON FUNCTIONAL. USER ACTION REQUIRED.>'
@@ -119,7 +120,7 @@ class Body():
             elif (self.energy < 5):
                 self.stomach = 'very hungry'
             elif (self.energy < 2):
-                self.stomach = 'starving'
+                self.stomach = 'ravenous'
                 self.state = 'scared'
     
     
@@ -127,13 +128,13 @@ class Body():
     #it will not be ignored (in that way it is as determined as I)
     #Am I a complacent housecat, fat and happy or a tomcat, lean and on the prowl?
     def isHungry(self):
-        print (self.name, 'is ', self.stomach)
+        print (self.name, ' is ', self.stomach)
     
     
     def see(self):
         if (self.eyes == True):
             print ('I open my eyes')
-            print ('Light floods in, overwhelming me')
+            print ('light floods in, overwhelming me')
         else:
             print ('I cannot see, I am shrouded in darkness')
             
